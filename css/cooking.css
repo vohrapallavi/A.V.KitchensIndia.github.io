@@ -1,0 +1,154 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+	div.title{
+	width: 100%;
+	height: 400px;
+	margin: 0;
+	padding: 0;
+	background-color: darkred;
+	position: relative;
+	
+
+}
+div.card-header h4{
+	font-size: 21px;
+	text-shadow: 1px 1px 2px black;
+}
+div.card-header h4.longtext{
+	font-size: 18px;
+}
+
+div.catalog{
+	width: 100%;
+	height: 2930px;
+	margin-bottom: 10px;
+	background-color: #e5e5e5;
+	box-shadow: 2px 1px 6px black;
+	position: absolute;
+	margin: auto;
+	top: 240px;
+	left: 82px;
+	z-index: 2;
+}
+
+div.catalog div.card{
+	height: 440px;
+	background-color: darkred;
+	transition: 1s linear;
+}
+
+
+div.catalog div.card-header{
+	height: 45px;
+	border-radius: 5px;
+	font-family: sans-serif;
+	color: white;
+
+}
+
+div.title h2{
+	margin-top: 10px;
+}
+
+/* overlay concept */
+div.catalog div.card-body{
+	position: relative;
+	width: 100%;
+}
+
+div.catalog div.overlay{
+	/*background: linear-gradient(rgba(0,0,0,0.4);*/
+		width: 100%;
+		background: rgba(0, 0, 0, 0.8);
+		color: white;
+		/*display: none;
+		position: absolute;
+		bottom: 19px;
+        transition: 1s ease bottom;*/
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  right: 0;
+		  overflow: hidden;
+		  height: 0;
+		  transition: .5s ease;
+		}
+
+div.card-text {
+  color: white;
+  width: 80%;
+
+  font-size: 13px;
+  font-weight: bold;
+letter-spacing: 1px;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+div.catalog div.card-body:hover .overlay{
+
+	/*display: block;
+	transform: translateY(-10px);
+	height: 40px;*/
+
+	height: 100%;
+}
+
+/*overlay ends */
+
+div.overlay table{
+	width: 120%;
+	border-collapse: collapse;
+}
+div.overlay th,td{
+	padding: 6px;
+	text-align: left;
+	border-bottom: 1px solid black;
+}
+div.overlay td#col1{
+	border-right: 1px solid black;
+
+}
+
+div.card-footer{
+    border-top: 1px solid saddlebrown;	
+	height: 75px;
+	text-shadow: 1px 1px 2px white;
+   
+}
+
+div.catalog div.card:hover {
+	background-color: #af1d1d;
+	transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 576px){
+	div.catalog{
+		position: initial;
+	}
+
+    div.title{
+    	height: 210px;
+    }
+	
+}
+@media (max-width: 760px){
+	div.card{
+		margin-bottom: 10px;
+	}
+}
+
+
+

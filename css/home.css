@@ -1,0 +1,315 @@
+/*hero banner div*/
+
+div.herobanner{
+	width: 100%;
+    height: 100vh;
+   /* background-color: blue;*/
+         background-image: linear-gradient(rgba(0,0,5,0.5),rgba(0,1,1,0.5)), url("../images/herobanner.jpg");
+  /*  background-image: linear-gradient(rgba(0,0,5,0.5),rgba(0,1,1,0.5),url("",));*/
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    filter: blur(1px);
+}
+
+@media (max-width: 500px){
+	div.herobanner{
+
+	width: 100%;
+    height: 100vh;
+   /* background-color: blue;*/
+    background-image: linear-gradient(rgba(0,0,5,0.5),rgba(0,1,1,0.5)), url("http://chowdeshwarikitchens.in/commercial-kitchen-equipments/images/slide-1.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    top: 0px;
+    filter: blur(3px);
+
+	}
+
+}
+
+div.cfirstd{
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: 3px;
+	position: absolute;
+	top: 180px;
+}
+
+div.cfirstd section#herotext h1{
+	text-shadow: 2px 2px 2px black;
+	font-family: "Acme";
+	
+}
+div.cfirstd section#herotext p{
+	text-shadow: 2px 2px 5px red;
+}
+div.cfirstd section#herotext button{
+   
+ 
+    font-weight: bolder;
+    box-shadow: 3px 3px 2px white;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+/*animations on hero banner */
+
+#hero h3 {
+	display: block;
+	width: fit-content;
+	font-size: 4rem;
+	position: relative;
+	color: transparent;
+	animation: text_reveal .5s ease forwards;
+	animation-delay: 1s;
+}
+#hero h3:nth-child(1) {
+
+	animation-delay: 1s;
+}
+#hero h3:nth-child(2) {
+		animation: text_bird .5s ease forwards;
+
+	animation-delay: 2s;
+}
+#hero h3:nth-child(3) {
+	
+	animation: text_reveal_name .5s ease forwards;
+	animation-delay: 3s;
+}
+#hero h3 span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 90%;
+	width: 0;
+	font-family: initial;
+	background-color: #ffc107!important;
+	box-shadow: 4px 5px 3px black;
+	animation: text_reveal_box 1s ease;
+	animation-delay: .5s;
+}
+#hero h3:nth-child(1) span {
+	animation-delay: .5s;
+}
+#hero h3:nth-child(2) span {
+	animation-delay: 1.5s;
+}
+#hero h3:nth-child(3) span {
+	animation-delay: 2.5s;
+}
+
+@keyframes text_reveal_box {
+	50% {
+		width: 100%;
+		left: 0;
+	}
+	100% {
+		width: 0;
+		left: 100%;
+	}
+}
+@keyframes text_reveal {
+	100% {
+		color: white;
+		letter-spacing: 3px;
+		font-family:fantasy ;
+		    text-shadow: 3px 2px 2px black ;
+		font-size: 40px;
+	}
+}
+@keyframes text_bird {
+	100% {
+		color: darkred;
+	font-family: revert;
+	font-weight: bolder;
+		font-size: 40px;
+	text-shadow: 2px 2px 2px black;
+
+	}
+}
+@keyframes text_reveal_name {
+	100% {
+		color: black;
+		letter-spacing: 3px;
+		/*font-weight: 500;*/
+		font-size: 40px;font-family: fantasy;
+		    text-shadow: 3px 2px 2px white ;
+		
+	}
+
+}
+
+
+
+
+/*animations ended*/
+
+
+/*overview section begins*/
+
+h1.subheading{
+	font-family:  'Acme', sans-serif;
+    background-color: black;
+    color: aliceblue;
+    padding: 7px;
+    letter-spacing: 1px;
+
+}
+div.overviewtext{
+	font-family: inherit;
+	font-weight: 500;
+}
+
+div.overview p.cfirstdh2{
+
+		color: white;
+		/*font-family: 'Redressed', cursive;*/
+		font-family: inherit;
+		letter-spacing: 2.5px;
+		font-weight: bold;
+		font-size: 20px;
+	
+}
+
+/*overview ends*/
+
+/*carousel begins*/
+
+div.carousel-inner div.card{
+	width: 400px;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+  border-radius: 0;
+  font-family: inherit;
+  font-weight: 600;
+}
+.carousel-inner {
+  padding: 1em;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1;
+  
+  height: 5vh;
+  border-radius: 50%;
+ 
+  transform: translateY(-50%);
+}
+
+@media (min-width: 768px) {
+  .card img {
+    height: 11em;
+  }
+}
+
+
+/*carousel ends */
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+div.section-title h2{
+
+    font-size: 4.5rem;
+    width: 681px;
+    font-family: Oswald, sans-serif;
+    text-transform: none;
+    margin: 70px auto 0;
+    text-shadow: 1px 1px 2px black;
+}
+
+@media (max-width: 500px){
+	div.section-title h2{
+		font-size: 40px;
+		
+		width: 200px;
+
+	}
+
+}
+.services {
+  padding-bottom: 40px;
+}
+
+.services .icon-box {
+  margin-bottom: 40px;
+}
+
+.services .icon {
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  transition: 0.5s ease-out;
+  border: 2px solid #be0d0d;
+}
+
+.services .icon i {
+  color:  #be0d0d;
+  font-size: 24px;
+}
+
+.services .title {
+  margin-left: 90px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .title a {
+  color:  #be0d0d;
+  transition: 0.3s ease-out;
+  font-family: "Acme";
+}
+
+.services .description {
+  margin-left: 90px;
+  line-height: 24px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.services .icon-box:hover .icon {
+  background: #ffc107!important;
+  transform: rotate(360deg);
+}
+
+.services .icon-box:hover .icon i {
+  color: #fff;
+}
+
+.services .icon-box:hover .title a {
+  color: darkred;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #ffc107;
+  letter-spacing: 2px;
+
+}
